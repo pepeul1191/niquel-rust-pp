@@ -2,3 +2,8 @@
 /target/
 **/*.rs.bk
 Cargo.lock
+/public/bower_components
+/public/dist
+/node_modules
+package-lock.json
+.DS_Store
