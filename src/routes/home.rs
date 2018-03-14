@@ -1,5 +1,9 @@
 use nickel::{Nickel, HttpRouter, Request, Response, MiddlewareResult};
+use std::collections::HashMap;
 
 pub fn index<'mw>(_req: &mut Request, res: Response<'mw>) -> MiddlewareResult<'mw> {
-  res.send("Home")
+  let mut data = HashMap::<&str, &str>::new();
+  data.insert("name", "user");
+  return res.render("views/home/index.tpl", &data)
+  //res.send("Home")
 }
