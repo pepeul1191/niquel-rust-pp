@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Niquel RUST</title>
+	<title>{{ title }}</title>
 	<meta charset="UTF-8">
   <link rel="shortcut icon" href="http://localhost:6767/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

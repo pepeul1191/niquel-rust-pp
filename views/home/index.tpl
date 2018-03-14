@@ -1,3 +1,3 @@
 {{> ../layouts/blank_header }}
-hola mundo
+hola mundo - {{ name }}
 {{> ../layouts/blank_footer }}
