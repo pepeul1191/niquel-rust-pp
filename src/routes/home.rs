@@ -5,6 +5,6 @@ pub fn index<'mw>(_req: &mut Request, res: Response<'mw>) -> MiddlewareResult<'m
   let mut data = HashMap::<&str, &str>::new();
   data.insert("name", "Pepis");
   data.insert("title", "Home");
-  return res.render("views/home/index.tpl", &data)
+  res.render("views/home/index.tpl", &data)
   //res.send("Home")
 }
