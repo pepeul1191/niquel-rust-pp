@@ -1,4 +1,4 @@
-use nickel::{Nickel, HttpRouter, Request, Response, MiddlewareResult};
+use nickel::{Request, Response, MiddlewareResult};
 use std::collections::HashMap;
 
 pub fn index<'mw>(_req: &mut Request, res: Response<'mw>) -> MiddlewareResult<'mw> {
