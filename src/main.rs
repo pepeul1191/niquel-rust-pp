@@ -12,7 +12,8 @@ fn main() {
   let mut server = Nickel::new();
   //archivos estáticos
   server.utilize(StaticFilesHandler::new("public/"));
-  //middleware personalizado de logs en la consola
+  //middleware personalizado
+  server.utilize(config::middleware::set_headers);
   server.utilize(config::middleware::logger_fn);
   //handlers de rutas
   server.get("/hello", hello);
